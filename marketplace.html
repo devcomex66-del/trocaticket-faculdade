@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace — TrocaTicket Retrô</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <p class="academic-banner">Trabalho acadêmico · anúncios fictícios</p>
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <span class="logo-stub" aria-hidden="true"></span>
+      <span>
+        <h1>TROCA TICKET</h1>
+        <small>CLASSIFICADOS</small>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false">Menu</button>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="marketplace.html" aria-current="page">Marketplace</a>
+      <a href="organizadores.html">Organizadores</a>
+      <a href="como-funciona.html">Como funciona</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contato.html">Contato</a>
+      <a href="carrinho.html" class="nav-cart">Carrinho <span data-cart-count>0</span></a>
+    </nav>
+  </header>
+
+  <main class="wrap section">
+    <h2>Quadro de trocas</h2>
+    <p class="lede">No TrocaTicket, o marketplace só aparece quando o organizador habilita a revenda/transferência daquele evento. A plataforma aplica regras de segurança e validação antes de fechar a operação. Nada de código de ingresso, token ou dado pessoal nesta página.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Evento (demo)</th>
+            <th>Tipo</th>
+            <th>Lote</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rock no Porão</td>
+            <td>Transferência</td>
+            <td>Único</td>
+            <td>Habilitado pelo organizador</td>
+          </tr>
+          <tr>
+            <td>Arraiá Universitário</td>
+            <td>Revenda limitada</td>
+            <td>Lote 2</td>
+            <td>Em análise de regras</td>
+          </tr>
+          <tr>
+            <td>Noite do Vinil</td>
+            <td>—</td>
+            <td>Lote 2</td>
+            <td>Marketplace desligado</td>
+          </tr>
+          <tr>
+            <td>Stand-up da Semana</td>
+            <td>Cortesia</td>
+            <td>—</td>
+            <td>Não negociável</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid-2" style="margin-top:1.2rem">
+      <article class="card">
+        <h3>Como a troca anda</h3>
+        <p>O ingresso tem identificador único. Na transferência, a titularidade muda na plataforma — o QR antigo deixa de valer na catraca.</p>
+      </article>
+      <article class="card">
+        <h3>O que não entra no cartaz</h3>
+        <p>Dashboards privados, dados de comprador, códigos de validação e valores financeiros internos ficam fora da vitrine pública.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="index.html">← Voltar à bilheteria</a></p>
+  </footer>
+  <script src="js/bilheteria.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

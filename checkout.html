@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — TrocaTicket Retrô</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <p class="academic-banner">Pagamento fictício · PIX e cartão não processam dinheiro</p>
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <span class="logo-stub" aria-hidden="true"></span>
+      <span>
+        <h1>TROCA TICKET</h1>
+        <small>CAIXA</small>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false">Menu</button>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="organizadores.html">Organizadores</a>
+      <a href="como-funciona.html">Como funciona</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contato.html">Contato</a>
+      <a href="carrinho.html" class="nav-cart">Carrinho <span data-cart-count>0</span></a>
+    </nav>
+  </header>
+  <main class="wrap section">
+    <h2>Fechar a compra</h2>
+    <div id="checkout-resumo"></div>
+    <form id="checkout-form">
+      <label>Nome no ingresso
+        <input name="nome" required autocomplete="name">
+      </label>
+      <label>E-mail
+        <input name="email" type="email" required autocomplete="email">
+      </label>
+      <fieldset>
+        <legend>Pagamento (simulado)</legend>
+        <label><input type="radio" name="pagamento" value="pix" checked> PIX</label>
+        <label><input type="radio" name="pagamento" value="cartao"> Cartão</label>
+      </fieldset>
+      <div class="pay-box" id="box-pix">
+        <p>Chave PIX demo (não pague):</p>
+        <p class="pix-code">00020126TROCATICKET-FACULDADE-DEMO5204000053039865802BR5925TROCA TICKET ACADEMICO</p>
+      </div>
+      <div class="pay-box" id="box-cartao" hidden>
+        <label>Número (qualquer 16 dígitos de mentira)
+          <input name="cartao" inputmode="numeric" maxlength="19" placeholder="0000 0000 0000 0000">
+        </label>
+        <label>Validade
+          <input name="validade" placeholder="MM/AA" maxlength="5">
+        </label>
+      </div>
+      <button class="btn" type="submit">Confirmar e gerar ingresso</button>
+    </form>
+  </main>
+  <footer class="site-footer">
+    <p><a href="carrinho.html">← Voltar ao carrinho</a></p>
+  </footer>
+  <script src="js/bilheteria.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

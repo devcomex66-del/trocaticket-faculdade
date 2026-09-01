@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho — TrocaTicket Retrô</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <p class="academic-banner">Guichê de demonstração</p>
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <span class="logo-stub" aria-hidden="true"></span>
+      <span>
+        <h1>TROCA TICKET</h1>
+        <small>FILA DO GUICHÊ</small>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false">Menu</button>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="organizadores.html">Organizadores</a>
+      <a href="como-funciona.html">Como funciona</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contato.html">Contato</a>
+      <a href="carrinho.html" class="nav-cart" aria-current="page">Carrinho <span data-cart-count>0</span></a>
+    </nav>
+  </header>
+  <main class="wrap section">
+    <h2>Seu carrinho</h2>
+    <p class="lede">Ajuste as quantidades (0 tira o item). Nada é cobrado de verdade.</p>
+    <div id="lista-carrinho"></div>
+    <p class="total-line" id="cart-total"></p>
+    <div id="cart-acoes" class="actions" style="justify-content:flex-start">
+      <a class="btn" href="checkout.html">Ir ao pagamento</a>
+      <button class="btn ghost" type="button" id="limpar-carrinho">Esvaziar</button>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p><a href="eventos.html">← Continuar no cartaz</a></p>
+  </footer>
+  <script src="js/bilheteria.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

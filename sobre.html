@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre — TrocaTicket Retrô</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <p class="academic-banner">Trabalho acadêmico · reprodução visual</p>
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <span class="logo-stub" aria-hidden="true"></span>
+      <span>
+        <h1>TROCA TICKET</h1>
+        <small>A CASA</small>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false">Menu</button>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="organizadores.html">Organizadores</a>
+      <a href="como-funciona.html">Como funciona</a>
+      <a href="sobre.html" aria-current="page">Sobre</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contato.html">Contato</a>
+      <a href="carrinho.html" class="nav-cart">Carrinho <span data-cart-count>0</span></a>
+    </nav>
+  </header>
+
+  <main class="wrap section">
+    <h2>Sobre o TrocaTicket</h2>
+    <p class="lede">O TrocaTicket é uma plataforma digital para descoberta, criação, gerenciamento, comercialização e transferência segura de ingressos. Liga participantes, organizadores e vendedores num mesmo ecossistema — da vitrine à catraca.</p>
+    <div class="grid-2">
+      <article class="card">
+        <h3>O que é</h3>
+        <p>Tecnologia para eventos: cartaz público, bilheteria digital, QR Code, check-in, marketplace (quando liberado) e painel operacional para quem produz.</p>
+      </article>
+      <article class="card">
+        <h3>O que este site é</h3>
+        <p>Uma releitura retrô (vermelho e preto, estética de bilheteria) feita para trabalho de faculdade. Não substitui o produto em <a href="https://trocaticket.com.br/">trocaticket.com.br</a>.</p>
+      </article>
+    </div>
+    <article class="card" style="margin-top:1rem">
+      <h3>Stack da plataforma original (referência)</h3>
+      <p>Next.js, React, TypeScript, Supabase, PostgreSQL, autenticação e Row Level Security. Esta versão acadêmica é HTML, CSS e JavaScript estáticos.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="index.html">← Voltar à bilheteria</a></p>
+  </footer>
+  <script src="js/bilheteria.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato — TrocaTicket Retrô</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <p class="academic-banner">Formulário de demonstração · não envia e-mail de verdade</p>
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <span class="logo-stub" aria-hidden="true"></span>
+      <span>
+        <h1>TROCA TICKET</h1>
+        <small>GUICHÊ</small>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false">Menu</button>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="organizadores.html">Organizadores</a>
+      <a href="como-funciona.html">Como funciona</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contato.html" aria-current="page">Contato</a>
+      <a href="carrinho.html" class="nav-cart">Carrinho <span data-cart-count>0</span></a>
+    </nav>
+  </header>
+
+  <main class="wrap section">
+    <h2>Fale com o guichê</h2>
+    <p class="lede">No produto real, use os canais oficiais em trocaticket.com.br. Este formulário só simula o envio no navegador, para o professor ver o fluxo.</p>
+    <p id="flash" class="flash" role="status">Recado recebido no guichê (simulação). Nada foi enviado a um servidor.</p>
+    <form id="contato-form">
+      <label>Nome
+        <input name="nome" required autocomplete="name">
+      </label>
+      <label>E-mail
+        <input name="email" type="email" required autocomplete="email">
+      </label>
+      <label>Assunto
+        <select name="assunto" required>
+          <option value="">Escolha…</option>
+          <option>Sou participante</option>
+          <option>Sou organizador</option>
+          <option>Marketplace / transferência</option>
+          <option>Trabalho de faculdade</option>
+        </select>
+      </label>
+      <label>Mensagem
+        <textarea name="mensagem" rows="5" required></textarea>
+      </label>
+      <button class="btn" type="submit">Entregar recado</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>Canal oficial: <a href="https://trocaticket.com.br/" rel="noopener">https://trocaticket.com.br/</a></p>
+  </footer>
+  <script src="js/bilheteria.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
